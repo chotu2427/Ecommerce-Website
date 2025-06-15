@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Ensures proper character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Makes the site responsive -->
+    <title>ShopEasy - E-Commerce</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Links to the CSS file -->
+</head>
+<body>
+    <!-- Header Section: Contains logo and navigation -->
+    <header>
+        <div class="logo">
+            <h1>ShopEasy</h1> <!-- Brand name -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart" class="cart">Cart (<span id="cart-count">0</span>)</a></li> <!-- Cart with counter -->
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section: Promotional banner to attract users -->
+    <section class="hero" id="home">
+        <h2>Discover Amazing Deals at ShopEasy</h2>
+        <p>Shop the latest electronics, fashion, and more at unbeatable prices!</p>
+        <a href="#products" class="btn">Shop Now</a> <!-- Call-to-action button -->
+    </section>
+
+    <!-- Product Filter Section: Allows users to filter products -->
+    <section class="filter">
+        <h3>Filter Products</h3>
+        <div class="filter-options">
+            <select id="category-filter">
+                <option value="all">All Categories</option>
+                <option value="electronics">Electronics</option>
+                <option value="fashion">Fashion</option>
+                <option value="accessories">Accessories</option>
+            </select>
+            <input type="text" id="search-bar" placeholder="Search products...">
+        </div>
+    </section>
+
+    <!-- Products Section: Displays product cards in a grid -->
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <!-- Product Card 1 -->
+            <div class="product-card" data-category="electronics">
+                <img src="https://via.placeholder.com/200" alt="Smartphone">
+                <h3>Smartphone Pro</h3>
+                <p class="price">$499.99</p>
+                <p class="description">Latest 5G smartphone with 128GB storage.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="product-card" data-category="electronics">
+                <img src="https://via.placeholder.com/200" alt="Laptop">
+                <h3>UltraBook</h3>
+                <p class="price">$999.99</p>
+                <p class="description">Lightweight laptop with 16GB RAM.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="product-card" data-category="accessories">
+                <img src="https://via.placeholder.com/200" alt="Headphones">
+                <h3>Wireless Headphones</h3>
+                <p class="price">$99.99</p>
+                <p class="description">Noise-canceling headphones with 20h battery.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="product-card" data-category="fashion">
+                <img src="https://via.placeholder.com/200" alt="Jacket">
+                <h3>Leather Jacket</h3>
+                <p class="price">$149.99</p>
+                <p class="description">Stylish jacket for all seasons.</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section: Contains copyright and links -->
+    <footer>
+        <p>© 2025 ShopEasy. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a> | 
+            <a href="#terms">Terms of Service</a> | 
+            <a href="#support">Customer Support</a>
+        </div>
+    </footer>
+</body>
+</html>
